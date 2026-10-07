@@ -1,0 +1,66 @@
+#pragma once
+#include "PersonajesSecundarios.h"
+
+class Spot : public PersonajeSecundario
+{
+protected:
+public:
+	Spot(int, int, int, int, float, float, float, float, float, string, bool, float);
+	~Spot() override;
+	void Dibujar();
+	void Borrar();
+	bool ColisionSpot(Protagonista*);
+	void ImprimirSpot(int, int);
+	void MoverSpot(int, int, int, int);
+};
+Spot::Spot(int x1, int y1, int ancho, int alto, float ataque, float vida, float velocidad, float velotemp, float veloatac, string tipo, bool vivo, float temp) : PersonajeSecundario() {
+	ex = x1; ey = y1;
+	anchura = ancho; altura = alto;
+	cantidaddeataque = ataque;
+	cantidaddevida = vida;
+	velocidad = velocidad;
+	velocidadtempo = velotemp;
+	velocidadataque = veloatac;
+	this->tipo = tipo;
+	this->vivo = vivo;
+	cantdeproyectiles = 0;
+	listaP = nullptr;
+	tempo = temp;
+}
+Spot::~Spot() {}
+bool Spot::ColisionSpot(Protagonista* personaje) {
+	if (CalcularColisiones(personaje->GetPX(), personaje->GetPY(), ex, ey, personaje->GetAlto(), personaje->GetAncho(), altura, anchura)) {
+		return true;
+	}
+	else { return false; }
+}
+void Spot::ImprimirSpot(int x1, int y1) {
+	DibujarSpot(x1, y1);
+}
+void Spot::MoverSpot(int xi, int ys, int xd, int yi) {
+	BorrarSpot(ex, ey);
+	if (ex == xi) {ex = xd;}
+	else {
+		if (ex == xd) {ex = xi;}
+	}
+	if (ey == ys) {ey = yi;}
+	else {
+		if (ey == yi) {ey = ys;}
+	}
+	ImprimirSpot(ex, ey);
+	_sleep(1);
+}
+void Spot::Dibujar() {
+	DibujarSpot(ex, ey);
+}
+void Spot::Borrar() {
+	_sleep(300);
+	DibujarGrieta(ex + 1, ey - 1);
+	_sleep(300);
+	DibujarGrieta2(ex + 1, ey - 1);
+	_sleep(300);
+	DibujarGrieta3(ex + 1, ey - 1);
+	_sleep(300);
+	BorrarSpot(ex, ey);
+	BorrarGrieta(ex + 1, ey - 1);
+}

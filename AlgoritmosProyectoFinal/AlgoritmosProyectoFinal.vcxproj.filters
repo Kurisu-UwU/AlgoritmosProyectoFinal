@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\AnimacionesACIIARTS">
+      <UniqueIdentifier>{b20cac53-6412-4f25-b3f5-38ee06316c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases">
+      <UniqueIdentifier>{afdfef8d-618b-4078-91d7-4c4a7d855856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia">
+      <UniqueIdentifier>{12c63426-3c4b-48c1-972d-3408806d4485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia\Niveles">
+      <UniqueIdentifier>{a33cff78-2ce6-45c7-8136-9727dfaa94b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia\Obstaculos">
+      <UniqueIdentifier>{d4ba4afd-ddf9-4e62-a951-2a33208d96ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia\Personaje Secundario">
+      <UniqueIdentifier>{7ef271aa-34a8-424a-96e0-deb65b7c8e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia\Protagonistas">
+      <UniqueIdentifier>{d246b82e-d1be-4435-8192-11d631fa0a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Herencia\Proyectiles">
+      <UniqueIdentifier>{02977025-c6cc-4d89-b81b-ba6d2ec1c983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Libreria">
+      <UniqueIdentifier>{36fc45d7-4b4c-41a7-8ba0-f016fa99b061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Clases\Padres">
+      <UniqueIdentifier>{0ae440a8-8f4e-4294-a86e-157b571414cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Funciones">
+      <UniqueIdentifier>{fc7016dc-a5e9-431f-9244-e3cee0c36d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Niveles">
+      <UniqueIdentifier>{ec4cbf25-128a-4a27-99f8-b3d2e3369009}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ayudantes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClasesDeNiveles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemsConstruccion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Librerias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Mejoras.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextoAnimadoDialogosETC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ASCIIArtsNiveles.h">
+      <Filter>Source Files\AnimacionesACIIARTS</Filter>
+    </ClInclude>
+    <ClInclude Include="ASCIIArtsMenu.h">
+      <Filter>Source Files\AnimacionesACIIARTS</Filter>
+    </ClInclude>
+    <ClInclude Include="Entidades.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="Habilidades.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="LasersMenu.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="NivelesClase.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="PersonajesSecundarios.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="Protagonistas.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="Proyectiles.h">
+      <Filter>Source Files\Clases\Padres</Filter>
+    </ClInclude>
+    <ClInclude Include="Clases.h">
+      <Filter>Source Files\Clases\Libreria</Filter>
+    </ClInclude>
+    <ClInclude Include="NivelPersecucionClase.h">
+      <Filter>Source Files\Clases\Herencia\Niveles</Filter>
+    </ClInclude>
+    <ClInclude Include="Items.h">
+      <Filter>Source Files\Clases\Herencia\Personaje Secundario</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemigos.h">
+      <Filter>Source Files\Clases\Herencia\Personaje Secundario</Filter>
+    </ClInclude>
+    <ClInclude Include="Gwen.h">
+      <Filter>Source Files\Clases\Herencia\Personaje Secundario</Filter>
+    </ClInclude>
+    <ClInclude Include="Spot.h">
+      <Filter>Source Files\Clases\Herencia\Protagonistas</Filter>
+    </ClInclude>
+    <ClInclude Include="MiguelOhara.h">
+      <Filter>Source Files\Clases\Herencia\Protagonistas</Filter>
+    </ClInclude>
+    <ClInclude Include="MilesMorales.h">
+      <Filter>Source Files\Clases\Herencia\Protagonistas</Filter>
+    </ClInclude>
+    <ClInclude Include="SpiderPunk.h">
+      <Filter>Source Files\Clases\Herencia\Protagonistas</Filter>
+    </ClInclude>
+    <ClInclude Include="Carros.h">
+      <Filter>Source Files\Clases\Herencia\Proyectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Tambores.h">
+      <Filter>Source Files\Clases\Herencia\Proyectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="NotasDeMusica.h">
+      <Filter>Source Files\Clases\Herencia\Proyectiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Niveles.h">
+      <Filter>Source Files\Niveles</Filter>
+    </ClInclude>
+    <ClInclude Include="NivelRitmo.h">
+      <Filter>Source Files\Niveles</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncionesDelMenu.h">
+      <Filter>Source Files\Funciones</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClasesNiveles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

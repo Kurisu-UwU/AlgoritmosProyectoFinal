@@ -1,0 +1,51 @@
+#include "FuncionesDelMenu.h"
+
+int main() {
+    srand(time(0));
+    ConsolayOjetos();
+    LasersMenu* laser1; laser1 = new LasersMenu(); // lasers menu
+    LasersMenu* laser2; laser2 = new LasersMenu();
+    LasersMenu* laser3; laser3 = new LasersMenu();
+	LasersMenu* laser4; laser4 = new LasersMenu();
+    opMenu = 1;
+    DibujarWASD(180, 39);
+    do {
+        do {//para mantener el menu en pantalla 
+            int random; random = rand() % 4;
+            Condicion2 = true;
+            DibujarMenu();
+            ColorMorado();
+            Dibujartitulo();
+            DibujarSpiderman(20, 20);
+            DibujarAraña(90, 10);
+            DibujarZ(160, 39); Posicion(130, 41); ColorAzul(); cout << "Para Seleccionar presione: ";
+            laser1->Mover();
+            laser3->Mover();
+            laser2->Mover();
+            laser4->Mover();
+            if (kbhit()){
+                char tecla = _getch();
+                DibujarWASD(180, 39);
+                if (tecla == 'w' || tecla == 'W') { opMenu--; if (opMenu < 1) opMenu = 3; AnimacionWASD(180, 39,1);}
+                if (tecla == 'a' || tecla == 'A') { AnimacionWASD(180, 39, 2); }
+                if (tecla == 's' || tecla == 'S') { opMenu++; if (opMenu > 3) opMenu = 1; AnimacionWASD(180, 39, 3);}
+                if (tecla == 'd' || tecla == 'D') { AnimacionWASD(180, 39, 4); }
+                if (tecla == 'z' || tecla == 'Z'){
+                    AnimacionBorrar();
+                    opFinal = opMenu;  // saber que opción eligió
+                    Condicion2 = false;
+                }
+            }
+            _sleep(10);
+        } while (Condicion2);
+        switch (opFinal) { //registrar opcion menu
+        case 1:
+			IniciarSeleccionPersonajes(); break; //Iniciar seleccion de personajes
+        case 2:
+            DibujarCreditos(); break;
+        case 3: 
+			Condicion1 = false; break; // Salir del juego
+        }
+    } while (Condicion1);
+    delete laser1; delete laser2; delete laser3; delete laser4; return 0;
+}
